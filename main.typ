@@ -2,9 +2,9 @@
 
 #show: doc => conf(
   title: "情報システム概論",
-  date: "2024年10月31日", 
-  student-id: "k23099", 
-  name: "花田歩夢",  
+  date: "2024年11月x日", 
+  student-id: "kxxxxx", 
+  name: "xxxx",  
   doc,
 )
 
