@@ -17,7 +17,7 @@ $lrm$ こんにちは#super[[@1]]
 
 
 #show heading.where(level: 1): it => {
-  set text(weight: "bold", size: 16pt)
+  set text(weight: "bold", size: 16pt, font: "Hiragino Mincho ProN")
   text()[
     #v(20pt)
     #it.body \

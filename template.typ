@@ -14,13 +14,10 @@
     margin: (bottom: 1.75cm, top: 2.25cm),
   )
   set text(
-    font: sans,
+    font: p,
     size: 15pt
   )
-  show heading: (it) => {
-    set text(font: p )
-    it
-}
+
 
 
   set page(
@@ -33,11 +30,11 @@
 
   v(10pt)
   align(center)[
-    #text(font:sans,25pt)[#title]
+    #text(font:sans,25pt, weight: 550)[#title]
   ]
   v(10pt)
   align(right)[
-    #text(15pt)[
+    #text(font:sans,15pt, weight: 400)[
       #date \
       #student-id #h(10pt) #name
     ]
@@ -51,14 +48,13 @@
   )
   // show par: set block(spacing: 1em)
   set par(spacing: 1em)
-
-
+  
   set heading(numbering: (..nums) => {
     nums.pos().map(str).join(".") + " "
   })
   show heading.where(level: 1): it => {
     counter(math.equation).update(0)
-    set text(weight: "bold", size: 16pt)
+    set text(weight: "bold", size: 16pt, font: sans)
     let pre_chapt = text()[
         #numbering("1", ..counter(heading).at(it.location())).
     ]
@@ -69,7 +65,7 @@
     ]
   }
   show heading.where(level: 2): it => {
-    set text(weight: "bold", size: 14pt)
+    set text(weight: "bold", size: 15pt, font: sans)
     let pre_chapt = text()[
       #numbering(it.numbering, ..counter(heading).at(it.location()))
     ]
