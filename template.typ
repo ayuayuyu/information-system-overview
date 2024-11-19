@@ -15,7 +15,7 @@
   )
   set text(
     font: p,
-    size: 15pt
+    size: 15pt,
   )
 
 
@@ -79,6 +79,8 @@
     set par(first-line-indent: 0pt)
     it
   }
+  
+
 
   counter(page).update(1)
 
